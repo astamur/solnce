@@ -10,3 +10,8 @@
 
 ### Материалы по Python
 - [Основной синтаксис](https://www.pythoncheatsheet.org/) (English)
+
+### Ресурсы с задачами
+- https://acmp.ru/index.asp?main=tasks
+- https://leetcode.com/
+- https://www.hackerrank.com/
