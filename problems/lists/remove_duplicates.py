@@ -30,16 +30,13 @@ def remove_duplicates(nums):
 
 
 def remove_duplicates_2(nums):
-    res = set()
-
-    for n in nums:
-        res.add(n)
-
-    print(res)
+    print(set(nums))
 
 
 nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
 print(nums)
 
 print(nums[0:remove_duplicates(nums)])
-print(nums)
+
+print("Example with set")
+remove_duplicates_2(nums)
