@@ -48,7 +48,7 @@ def swap_pairs_iter(head: ListNode) -> ListNode:
 
 
 def print_list(head: ListNode):
-    while head != None:
+    while head is not None:
         print(head.val, end=" ")
         head = head.next
     print()

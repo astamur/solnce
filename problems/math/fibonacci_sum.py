@@ -18,7 +18,7 @@ def sum(limit):
 
 
 def sum_2(limit):
-    prev, cur, help, sum = 1, 2, 0, 0
+    prev, cur, sum = 1, 2, 0
     prev_even, cur_even = False, True
 
     while cur < limit:
