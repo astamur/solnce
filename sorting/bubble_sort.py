@@ -3,24 +3,29 @@
 """
 
 
-# O(N*(N/2)) ~ O(N^2)
+# O(N * (4 * (N/2)) ~ O(N^2)
 def sort(nums):
     length = len(nums)
-    step = 0
+    swapped = True
 
     print("Nums: {}".format(nums))
 
     # N
-    while step < length:
-        # N/2
-        for i in range(1, length - step):
-            if nums[i - 1] > nums[i]:
-                nums[i - 1], nums[i] = nums[i], nums[i - 1]
-        print("Nums: {}".format(nums))
-        step += 1
+    for i in range(len(nums)):
+        if not swapped:
+            return
 
-    return nums
+        swapped = False
+
+        # N/2
+        for j in range(1, length - i):
+            if nums[j - 1] > nums[j]:
+                nums[j - 1], nums[j] = nums[j], nums[j - 1]
+                swapped = True
+        print("Nums: {}".format(nums))
 
 
 # Example
-print(sort([9, 2, 6, 3, 1, 7, 4, 2, 8]))
+nums = [9, 2, 6, 3, 1, 7, 4, 2, 8]
+sort(nums)
+print(nums)
